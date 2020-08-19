@@ -16,4 +16,3 @@ end
 
 puts "Great, you're #{player}'s.  What's your first move?  Enter 1-9.  For example enter 1 for upper left cell, 5 for center cell, or 9 for bottom right cell"
 board_position=gets.strip
-  
