@@ -6,7 +6,14 @@ require_relative '../lib/move.rb'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
-puts "Will you be X's or O's?  #{player=gets.strip}"
+# puts "Will you be X's or O's? #{player=gets.strip}"
+puts "Will you be X's or O's? "
+player=gets.strip
+if player != "X" || player != "O"
+ puts "You must enter X or O, please."
+ player = gets.strip
+end
+
 puts "Great, you're #{player}'s.  What's your first move?  Enter 1-9.  For example enter 1 for upper left cell, 5 for center cell, or 9 for bottom right cell"
 board_position=gets.strip
   
